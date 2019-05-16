@@ -67,14 +67,14 @@
                             <constraint firstItem="3mA-aW-nkc" firstAttribute="trailing" secondItem="BSV-Nx-TRS" secondAttribute="trailing" id="AkK-0Z-5QR"/>
                             <constraint firstItem="3mA-aW-nkc" firstAttribute="top" secondItem="gHE-Sf-7En" secondAttribute="bottom" constant="20" id="Dhe-7I-lTh"/>
                             <constraint firstItem="BSV-Nx-TRS" firstAttribute="trailing" secondItem="gHE-Sf-7En" secondAttribute="trailing" constant="10" id="DwR-vK-I6R"/>
-                            <constraint firstItem="3mA-aW-nkc" firstAttribute="bottom" secondItem="BSV-Nx-TRS" secondAttribute="bottom" id="LKb-1J-NWX"/>
                             <constraint firstItem="xO6-wv-TbV" firstAttribute="trailing" secondItem="BSV-Nx-TRS" secondAttribute="trailing" id="LV4-Ar-ruh"/>
-                            <constraint firstItem="BSV-Nx-TRS" firstAttribute="bottom" secondItem="bhO-Ob-hlY" secondAttribute="bottom" constant="1" id="PKV-Xj-uqQ"/>
                             <constraint firstItem="bhO-Ob-hlY" firstAttribute="trailing" secondItem="BSV-Nx-TRS" secondAttribute="trailing" id="UUt-fa-XsT"/>
                             <constraint firstItem="bhO-Ob-hlY" firstAttribute="leading" secondItem="BSV-Nx-TRS" secondAttribute="leading" id="efq-WG-ZwO"/>
+                            <constraint firstItem="3mA-aW-nkc" firstAttribute="top" secondItem="bhO-Ob-hlY" secondAttribute="bottom" id="hht-ib-tdk"/>
                             <constraint firstItem="3mA-aW-nkc" firstAttribute="leading" secondItem="BSV-Nx-TRS" secondAttribute="leading" id="lw3-Ad-bu9"/>
                             <constraint firstItem="bhO-Ob-hlY" firstAttribute="top" secondItem="RTk-jW-sRh" secondAttribute="top" id="m5T-uC-mIv"/>
                             <constraint firstItem="xO6-wv-TbV" firstAttribute="top" secondItem="RTk-jW-sRh" secondAttribute="top" id="r7N-fY-Mos"/>
+                            <constraint firstItem="3mA-aW-nkc" firstAttribute="bottom" secondItem="BSV-Nx-TRS" secondAttribute="bottom" id="uxj-AN-BYV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BSV-Nx-TRS"/>
                     </view>
