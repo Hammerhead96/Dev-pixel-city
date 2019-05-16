@@ -5,8 +5,6 @@
 //  Created by Mac User on 5/13/19.
 //  Copyright © 2019 Hammerhead96. All rights reserved.
 //
-// API key  323ba3dfc5a8dad5c53109976a13a6ae
-// Secret   ab45320da895a720
 
 import UIKit
 import MapKit
@@ -96,7 +94,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             centerMapOnUserLocation()
         }   }
     
-}
+} // end of class
 
 extension MapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -149,7 +147,7 @@ extension MapVC: MKMapViewDelegate {
             mapView.removeAnnotation(annotation)
         }   }
     func retrieveURLs(forAnnotation annotation: DroppablePin, handler: @escaping (_ status: Bool) -> ()) {
-        Alamofire.request(flickrUrl(withAnnotation: annotation, andNumberOfPhotos: 40)).responseJSON { (response) in
+        Alamofire.request(flickrUrl(withAnnotation: annotation, andNumberOfPhotos: 30)).responseJSON { (response) in
 //            guard let json = response.result.value as? Dictionary<String, AnyObject> else { return }
 //            let photosDict = json["photos"] as! Dictionary<String, AnyObject>
 //            let photosDictArray = photosDict["photo"] as! [Dictionary<String, AnyObject>]
@@ -167,7 +165,7 @@ extension MapVC: MKMapViewDelegate {
             Alamofire.request(url).responseImage(completionHandler: { (response) in
             guard let image = response.result.value else { return }
                 self.imageArray.append(image)
-                self.progressLbl?.text = "\(self.imageArray.count)/40 Images Downloaded"
+                self.progressLbl?.text = "\(self.imageArray.count)/30 Images Downloaded"
                 if self.imageArray.count == self.imageURLArray.count {
                     handler(true)
                 }   })  }   }
@@ -175,8 +173,7 @@ extension MapVC: MKMapViewDelegate {
         Alamofire.SessionManager.default.session.getTasksWithCompletionHandler { (sessionDataTask, uploadData, downloadData) in
             sessionDataTask.forEach({ $0.cancel() })
             downloadData.forEach({ $0.cancel() })
-        }
-    }
+        }   }
 }
 
 extension MapVC: CLLocationManagerDelegate {
@@ -186,8 +183,7 @@ extension MapVC: CLLocationManagerDelegate {
             //locationManager.requestWhenInUseAuthorization()
         } else {
             return
-        }
-    }
+        }   }
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         centerMapOnUserLocation()
     }
