@@ -13,7 +13,7 @@
         <!--MapVC-->
         <scene sceneID="tO4-NR-oTw">
             <objects>
-                <viewController id="Hhz-Sv-GcA" customClass="MapVC" customModule="Dev_pixel_city" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" id="Hhz-Sv-GcA" customClass="MapVC" customModule="Dev_pixel_city" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RTk-jW-sRh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xR0-BI-Eaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6" y="119"/>
+        </scene>
+        <!--PopVC-->
+        <scene sceneID="1xg-Wk-TO3">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="Sf2-Im-dnA" customClass="PopVC" customModule="Dev_pixel_city" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRv-bl-McR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="37a-UP-M7R">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbb-29-IUE">
+                                <rect key="frame" x="87.5" y="622" width="200" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Tap to dismiss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-G6-3Oo">
+                                        <rect key="frame" x="13.5" y="1" width="173" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fnA-G6-3Oo" firstAttribute="centerX" secondItem="Sbb-29-IUE" secondAttribute="centerX" id="Hkg-EN-iZe"/>
+                                    <constraint firstAttribute="height" constant="25" id="Qmi-0r-SLh"/>
+                                    <constraint firstAttribute="width" constant="200" id="W06-B8-DdM"/>
+                                    <constraint firstItem="fnA-G6-3Oo" firstAttribute="centerY" secondItem="Sbb-29-IUE" secondAttribute="centerY" id="pQ3-dn-hNW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="37a-UP-M7R" firstAttribute="top" secondItem="aRv-bl-McR" secondAttribute="top" id="9dB-Ou-PQf"/>
+                            <constraint firstItem="Sbb-29-IUE" firstAttribute="centerX" secondItem="aRv-bl-McR" secondAttribute="centerX" id="CwW-9G-FcH"/>
+                            <constraint firstItem="37a-UP-M7R" firstAttribute="trailing" secondItem="gnf-Jm-Obe" secondAttribute="trailing" id="I8X-E3-7xZ"/>
+                            <constraint firstItem="gnf-Jm-Obe" firstAttribute="bottom" secondItem="Sbb-29-IUE" secondAttribute="bottom" constant="20" id="VnB-wf-YIT"/>
+                            <constraint firstItem="37a-UP-M7R" firstAttribute="bottom" secondItem="gnf-Jm-Obe" secondAttribute="bottom" id="aUe-xp-4X1"/>
+                            <constraint firstItem="37a-UP-M7R" firstAttribute="leading" secondItem="gnf-Jm-Obe" secondAttribute="leading" id="ulE-6W-BYw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gnf-Jm-Obe"/>
+                    </view>
+                    <connections>
+                        <outlet property="popImageView" destination="37a-UP-M7R" id="lRa-oQ-IYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Emf-pP-Rbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="114.69265367316342"/>
         </scene>
     </scenes>
     <resources>
